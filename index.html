@@ -182,12 +182,15 @@
                     <div>
                       Prossime Classi
                     </div>
-                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                    <!-- BUTTONS FOR 2 DIFFERENT BREAKPOINTS CANVAS -->
+                    <button type="button" class="d-lg-none btn btn-outline-primary " data-bs-toggle="offcanvas" data-bs-target="#offcanvasFull" aria-controls="offcanvasRight">+</button>
+                    <button type="button" class="d-none d-lg-block btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPartial" aria-controls="offcanvasRight">+</button>
+
                   </div>
 
                   <!-- OFFCANVAS FULL SCREEN (MOBILE - TABLET VERSION)-->
 
-                  <div class="offcanvas offcanvas-end offcanvas-lg offcanvas-full-screen" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas offcanvas-end offcanvas-lg offcanvas-full-screen" tabindex="-1" id="offcanvasFull" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -248,7 +251,7 @@
 
                   <!-- OFFCANVAS PARTIAL SCREEN (DESKTOP VERSION) -->
 
-                  <div class="offcanvas offcanvas-end offcanvas-sm offcanvas-partial-screen" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas offcanvas-end offcanvas-partial-screen" tabindex="-1" id="offcanvasPartial" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
