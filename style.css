@@ -1,0 +1,21 @@
+main{
+    padding-top: 59px;
+}
+
+header{
+    height: 54px;
+}
+
+
+
+.main{
+    height: calc(100vh - 54px);
+}
+
+.right-main-part{
+    height: calc(100vh - 54px);
+}
+
+.next-classes ul{
+    font-size: 0.6rem;
+}
