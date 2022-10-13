@@ -1,21 +1,27 @@
-main{
-    padding-top: 59px;
+.full-container{
+    height: 100vh;
 }
 
 header{
-    height: 54px;
+    height: 69px;
+    background-color: lightblue;
 }
 
-
-
-.main{
-    height: calc(100vh - 54px);
+main{
+    height: calc(100% - 69px);
+    background-color: lightcoral;
 }
 
-.right-main-part{
-    height: calc(100vh - 54px);
+.sidebar{
+    height: 100%;
+    background-color: darkslategray;
 }
 
-.next-classes ul{
-    font-size: 0.6rem;
+.main-right-part{
+    max-height: calc(100vh - 69px);
+}
+
+.debug{
+    width: 10px;
+    height: 2000px;
 }
