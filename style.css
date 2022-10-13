@@ -14,7 +14,7 @@ main{
 
 .sidebar{
     height: 100%;
-    background-color: darkslategray;
+    background-image: url(img/sidebar-bg.png);
 }
 
 .main-right-part{
@@ -24,4 +24,12 @@ main{
 .debug{
     width: 10px;
     height: 2000px;
+}
+
+.offcanvas-full-screen{
+    width: 100vw!important;
+}
+
+.offcanvas-partial-screen{
+    width: 70vh;
 }
