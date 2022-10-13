@@ -35,7 +35,7 @@
 
             <div class="col-2 d-flex align-items-center justify-content-center logo">
               <img class="d-none d-lg-block img-fluid" src="img/logo.svg" alt="">
-              <img class="d-lg-none img-fluid" src="img/mobile-logo.png" alt="">
+              <img class="d-lg-none w-75" src="img/mobile-logo.png" alt="">
             </div>
 
             <div class="col-8 navbar">
@@ -176,28 +176,25 @@
 
                 <!-- NEXT CLASSES -->
 
-                <div class="card next-classes ">
+                <div class="card next-classes my-2">
 
                   <div class="card-header d-flex justify-content-between">
                     <div>
                       Prossime Classi
                     </div>
-                    <!-- BUTTONS FOR 2 DIFFERENT BREAKPOINTS CANVAS -->
-                    <button type="button" class="d-lg-none btn btn-outline-primary " data-bs-toggle="offcanvas" data-bs-target="#offcanvasFull" aria-controls="offcanvasRight">+</button>
-                    <button type="button" class="d-none d-lg-block btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPartial" aria-controls="offcanvasRight">+</button>
-
+                    <button type="button" class="btn btn-outline-primary " data-bs-toggle="offcanvas" data-bs-target="#offcanvasGod" aria-controls="offcanvasRight">+</button>
                   </div>
 
-                  <!-- OFFCANVAS FULL SCREEN (MOBILE - TABLET VERSION)-->
+                  <!-- OFFCANVAS -->
 
-                  <div class="offcanvas offcanvas-end offcanvas-lg offcanvas-full-screen" tabindex="-1" id="offcanvasFull" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvasGod" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
 
-                      <form class="d-lg-none row g-3">
+                      <form class="row g-3">
                         <div class="col-md-6">
                           <label for="inputEmail4" class="form-label">Email</label>
                           <input type="email" class="form-control" id="inputEmail4">
@@ -242,80 +239,21 @@
                           </div>
                         </div>
                         <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Sign in</button>
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                          <button type="submit" class="btn btn-warning">Svuota</button>
                         </div>
                       </form>
                       
                     </div>
                   </div>
 
-                  <!-- OFFCANVAS PARTIAL SCREEN (DESKTOP VERSION) -->
-
-                  <div class="offcanvas offcanvas-end offcanvas-partial-screen" tabindex="-1" id="offcanvasPartial" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-
-                      <form class="d-none d-lg-block row g-3">
-                        <div class="col-md-6">
-                          <label for="inputEmail4" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputPassword4" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-12">
-                          <label for="inputAddress" class="form-label">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="col-12">
-                          <label for="inputAddress2" class="form-label">Address 2</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputCity" class="form-label">City</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-md-4">
-                          <label for="inputState" class="form-label">State</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <label for="inputZip" class="form-label">Zip</label>
-                          <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="mb-3">
-                          <label for="formFile" class="form-label">Default file input example</label>
-                          <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Sign in</button>
-                        </div>
-                      </form>
-                      
-                    </div>
-                  </div>
-                  
+                  <!-- CLASSES LIST -->
 
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                      <ul class="list-group list-group-flush">
+                      <ul class="list-group list-group-flush text-center">
 
-                        <li class="list-group-item fw-bold border-dark">
+                        <li class="list-group-item fw-bold border-dark px-0">
                           <div class="container-fluid">
                             <div class="row justify-content-between">
                               <div class="col-3 col-sm-2 name">
@@ -326,8 +264,8 @@
                                   <div class="row justify-content-end">
                                     <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
                                     <div class="col-2 d-none d-sm-block roi">ROI</div>
-                                    <div class="col-6 col-sm-2 state">Stato</div>
-                                    <div class="col-6 col-sm-2 actions">Azioni</div>
+                                    <div class="col-6 col-sm-3 state">Stato</div>
+                                    <div class="col-6 col-sm-3 actions">Azioni</div>
                                   </div>
                                 </div>
                               </div>
@@ -335,19 +273,26 @@
                           </div>
                         </li>
 
-                        <li class="list-group-item">
+                        <li class="list-group-item px-0">
                           <div class="container-fluid">
                             <div class="row justify-content-between">
                               <div class="col-3 col-sm-2 name">
-                                Nome
+                                <span>Nome</span>
                               </div>
                               <div class="col-9 col-sm-10">
                                 <div class="container-fluid">
                                   <div class="row justify-content-end">
                                     <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
                                     <div class="col-2 d-none d-sm-block roi">ROI</div>
-                                    <div class="col-6 col-sm-2 state">Stato</div>
-                                    <div class="col-6 col-sm-2 actions">Azioni</div>
+                                    <div class="col-6 col-sm-3 state"><span class="badge text-bg-success">Done</span></div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -355,7 +300,7 @@
                           </div>
                         </li>
 
-                        <li class="list-group-item">
+                        <li class="list-group-item px-0">
                           <div class="container-fluid">
                             <div class="row justify-content-between">
                               <div class="col-3 col-sm-2 name">
@@ -366,8 +311,216 @@
                                   <div class="row justify-content-end">
                                     <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
                                     <div class="col-2 d-none d-sm-block roi">ROI</div>
-                                    <div class="col-6 col-sm-2 state">Stato</div>
-                                    <div class="col-6 col-sm-2 actions">Azioni</div>
+                                    <div class="col-6 col-sm-3 state">
+                                      <span class="badge text-bg-warning">Process</span>
+                                    </div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                Nome
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state">
+                                      <span class="badge text-bg-danger">Failed</span>
+                                    </div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                <span>Nome</span>
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state"><span class="badge text-bg-success">Done</span></div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                Nome
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state">
+                                      <span class="badge text-bg-warning">Process</span>
+                                    </div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                Nome
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state">
+                                      <span class="badge text-bg-danger">Failed</span>
+                                    </div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                <span>Nome</span>
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state"><span class="badge text-bg-success">Done</span></div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                Nome
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state">
+                                      <span class="badge text-bg-warning">Process</span>
+                                    </div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="list-group-item px-0">
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-3 col-sm-2 name">
+                                Nome
+                              </div>
+                              <div class="col-9 col-sm-10">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-end">
+                                    <div class="col-3 col-sm-4 d-none d-sm-block date">Data di inizio</div>
+                                    <div class="col-2 d-none d-sm-block roi">ROI</div>
+                                    <div class="col-6 col-sm-3 state">
+                                      <span class="badge text-bg-danger">Failed</span>
+                                    </div>
+                                    <div class="col-6 col-sm-3 actions">
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-pencil"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-secondary py-1 px-2" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                                        <i class="fa-solid fa-trash"></i>
+                                      </button>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -383,7 +536,7 @@
 
                 <!-- FAQ -->
 
-                <div class="card faq">
+                <div class="card faq my-2">
                   <div class="card-header">
                     FAQ
                   </div>
@@ -432,7 +585,7 @@
 
                 <!-- TO-DO LIST -->
 
-                <div class="card todo">
+                <div class="card todo my-2">
                   <div class="card-header">
                     Todo
                   </div>
@@ -470,7 +623,7 @@
 
                 <!-- CHART -->
 
-                <div class="card chart">
+                <div class="card chart my-2">
                   <div class="card-body">
                     <div class="card">
                       <img src="img/chart.jpg" class="card-img-top" alt="...">
@@ -503,11 +656,6 @@
     </main>
 
   </div>
-
-
-
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

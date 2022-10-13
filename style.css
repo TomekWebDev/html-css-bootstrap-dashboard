@@ -4,12 +4,10 @@
 
 header{
     height: 69px;
-    background-color: lightblue;
 }
 
 main{
     height: calc(100% - 69px);
-    background-color: lightcoral;
 }
 
 .sidebar{
@@ -26,10 +24,12 @@ main{
     height: 2000px;
 }
 
-.offcanvas-full-screen{
+.offcanvas-width{
     width: 100vw!important;
 }
 
-.offcanvas-partial-screen{
-    width: 70vw!important;
+@media screen and (min-width: 992px) {
+    .offcanvas-width{
+        width: 70vw!important;
+    }
 }
