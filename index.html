@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+  <!-- CANVA LAYOUT LINK: https://www.figma.com/file/FddyizTkYwHYqC5BOAVXV4/DASHBOARD-BOOTSTRAP-BOOLEAN?node-id=0%3A1 -->
+
   <title>Boolean Dashboard</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -44,7 +47,7 @@
               </form>
             </div>
 
-            <div class="col-2 d-flex align-items-center">
+            <div class="col-2 d-flex align-items-center togglers">
               <div class="d-flex w-100 justify-content-between icons">
                 <div class="top-icon d-none d-lg-block hover-pointer hover-pulse"><i class="fa-sharp fa-solid fa-list"></i></div>
                 <div class="top-icon d-none d-lg-block hover-pointer hover-pulse"><i class="fa-solid fa-circle-question"></i></div>
@@ -183,68 +186,6 @@
                       Prossime Classi
                     </div>
                     <button type="button" class="btn btn-outline-primary " data-bs-toggle="offcanvas" data-bs-target="#offcanvasGod" aria-controls="offcanvasRight">+</button>
-                  </div>
-
-                  <!-- OFFCANVAS -->
-
-                  <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvasGod" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-
-                      <form class="row g-3">
-                        <div class="col-md-6">
-                          <label for="inputEmail4" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputPassword4" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-12">
-                          <label for="inputAddress" class="form-label">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="col-12">
-                          <label for="inputAddress2" class="form-label">Address 2</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputCity" class="form-label">City</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-md-4">
-                          <label for="inputState" class="form-label">State</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <label for="inputZip" class="form-label">Zip</label>
-                          <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="mb-3">
-                          <label for="formFile" class="form-label">Default file input example</label>
-                          <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Salva</button>
-                          <button type="submit" class="btn btn-warning">Svuota</button>
-                        </div>
-                      </form>
-                      
-                    </div>
                   </div>
 
                   <!-- CLASSES LIST -->
@@ -535,7 +476,69 @@
 
                 </div>
 
-                <!-- MODAL TO CONFIRM ACTION IN THE TABLE -->
+                <!-- OFFCANVAS -->
+
+                <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvasGod" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="submit" class="btn btn-warning">Svuota</button>
+                      </div>
+                    </form>
+                    
+                  </div>
+                </div>
+
+                <!-- MODAL TO CONFIRM ACTION DELETE IN THE TABLE -->
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">

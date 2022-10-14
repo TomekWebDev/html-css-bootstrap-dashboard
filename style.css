@@ -33,6 +33,10 @@ main{
     vertical-align: middle;
 }
 
+.next-classes .row{
+    align-items: center;
+}
+
 .hover-pointer:hover{
     cursor: pointer;
 }
