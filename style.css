@@ -28,6 +28,28 @@ main{
     width: 100vw!important;
 }
 
+.class-avatar{
+    max-width: 25px;
+    vertical-align: middle;
+}
+
+.hover-pointer:hover{
+    cursor: pointer;
+}
+
+.hover-pulse:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+.active-menu-item{
+    transform: scale(1.2);
+}
+
+.hover-golden:hover{
+    color: gold;
+}
+
 @media screen and (min-width: 992px) {
     .offcanvas-width{
         width: 70vw!important;
