@@ -40,6 +40,7 @@ main{
 .hover-pulse:hover{
     transform: scale(1.2);
     transition: all 0.2s;
+    
 }
 
 .active-menu-item{
@@ -48,6 +49,11 @@ main{
 
 .hover-golden:hover{
     color: gold;
+}
+
+.hover-light:hover{
+    background-color: rgba(255, 255, 255, .9)!important;
+    color: #0e6efd!important;
 }
 
 @media screen and (min-width: 992px) {
